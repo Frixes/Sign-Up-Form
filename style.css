@@ -1,0 +1,75 @@
+:root {
+    --left-pad : 30px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    min-height: 100vh;
+}
+
+.background {
+    background-image: url(./Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.right-side {
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: whitesmoke;
+}
+
+.right-side > div {
+    padding-left: var(--left-pad);
+}
+
+
+
+.main {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 gray;
+    padding-left: var(--left-pad);
+}
+
+.main > div {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.main > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main input {
+    width: 100%;
+    margin-right: 50px;
+    padding: 4px 8px;
+}
+
+label {
+    display: block;
+}
